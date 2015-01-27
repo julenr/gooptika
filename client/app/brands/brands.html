@@ -1,0 +1,240 @@
+<section id="intro" class="intro">
+  <div class="adaptive-img-box ratio-16-9">
+    <img src="/assets/images/brandsbkg.jpg" alt="" />
+    <div class="slogan">
+      <h2>Fashion Eyewear</span> </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Section: services -->
+<section id="service" class="home-section text-center">
+  <div class="heading-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="wow bounceInDown" data-wow-delay="0.4s">
+            <div class="section-heading">
+              <h2>Eyewear is more than just a visual aid</h2>
+              <i class="fa fa-2x fa-angle-down"></i>
+              <p>Glasses are placed in the centre of the face and highlight our style, preferences for colour and shape. Colour can be matched to or contrasted with natural eye and hair colour. In some cases lenses can be cut to suit eye line. Frames can be chosen to accentuate the natural features of your face.</p>
+              <h5>RECTANGULAR FACE:</h5><p> Angular faces marry perfectly with oval lenses to give a harmonious appearance and wide temples to provide visual accents.</p>
+              <h5>TRIANGULAR FACE:</h5><p>Delicate frames or rimless models harmonise facial proportions. Narrow lens shapes accentuate high cheekbones.</p>
+              <h5>OVAL FACE:</h5><p>Rounded, square-shaped lenses are best suited to oval faces. They emphasise the eye zone and accentuate the charisma of the wearer.</p>
+              <h5>ROUND FACE:</h5><p>Smaller, drop-shaped lenses are best suited to round faces as they can stretch the face vertically and reinforce a harmonious appearance.</p>
+              <h5>SQUARE FACE:</h5><p>Perfect for bright colours on wide and interestingly-designed temples! Oval lens shapes complement square faces.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Section: services -->
+
+<!-- Section: Brands -->
+<section class="home-section text-center">
+  <h2>Our Brands</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <slick autoplay="true" autoplaySpeed="300" slides-to-show="3" slides-to-scroll="1">
+          <div ng-repeat="brandImg in Brands.brandsImages">
+            <img style="width:100%" ng-src="../assets/images/brands/{{brandImg.image}}" alt="" />
+          </div>
+        </slick>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Section: Brands -->
+
+
+
+<!--  NOT WORKING WITH NG-REPEAT
+<section class="home-section text-center">
+  <h1>Shapes and fabrics</h1>
+  <button ng-click="isotopeFilter('*')">show all</button>
+  <button ng-click="isotopeFilter('.metal')">Metallic</button>
+  <button ng-click="isotopeFilter('.plastic')">Plastic</button>
+  <button ng-click="isotopeFilter('.square')">Squared</button>
+  <button ng-click="isotopeFilter('.round')">Rounded</button>
+  <button ng-click="isotopeFilter('.rectangle')">Rectangled</button>
+
+  <div class="isotope">
+    <div ng-repeat="spectacle in spectacles">
+      <div class="element-item one-four {{spectacle.shape}} {{spectacle.fabric}}">
+        <div class="element-image">
+          <img src="../assets/images/{{spectacle.image}}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<section id="portfolio" class="content">
+  <!-- Container -->
+  <div class="container-fluid portfolio-title">
+    <!-- Section Title -->
+    <div class="section-title">
+      <h1>Shapes and materials</h1>
+      <span class="border"></span>
+      <p>Different eyeglass frame materials greatly expand your options for a new look</p>
+    </div>
+    <!--/Section Title -->
+  </div>
+  <!-- Container -->
+  <div class="portfolio-top"></div>
+  <!-- Portfolio Plus Filters -->
+  <div class="portfolio">
+    <!-- Filters -->
+    <div  id="filters">
+      <ul>
+        <li><a href="" ng-click="Brands.isotopeFilter('*');Brands.selectItem(1)"><h5 ng-class="{shapeselected: Brands.selectedItem==1}">All</h5></a></li>
+        <li><a href="" ng-click="Brands.isotopeFilter('.metal');Brands.selectItem(2)"><h5 ng-class="{shapeselected: Brands.selectedItem==2}">Metal</h5></a></li>
+        <li><a href="" ng-click="Brands.isotopeFilter('.plastic');Brands.selectItem(3)"><h5 ng-class="{shapeselected: Brands.selectedItem==3}">Plastic</h5></a></li>
+        <li><a href="" ng-click="Brands.isotopeFilter('.square');Brands.selectItem(4)"><h5 ng-class="{shapeselected: Brands.selectedItem==4}">Square</h5></a></li>
+        <li><a href="" ng-click="Brands.isotopeFilter('.round');Brands.selectItem(5)"><h5 ng-class="{shapeselected: Brands.selectedItem==5}">Round</h5></a></li>
+        <li><a href="" ng-click="Brands.isotopeFilter('.rectangled');Brands.selectItem(6)"><h5 ng-class="{shapeselected: Brands.Brands.selectedItem==6}">Rectangle</h5></a></li>
+        <li><a href="" ng-click="Brands.isotopeFilter('.oval');Brands.selectItem(7)"><h5 ng-class="{shapeselected: Brands.selectedItem==7}">Oval</h5></a></li>
+      </ul>
+    </div>
+    <!--/Filters -->
+
+    <div class="isotope">
+      <div>
+        <div class="element-item one-four plastic square">
+          <div class="element-image">
+            <img ng-src="../assets/images/square-plastic-glasses2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four plastic square">
+          <div class="element-image">
+            <img ng-src="../assets/images/square-plastic-glasses1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four metal square">
+          <div class="element-image">
+            <img ng-src="../assets/images/square-metallic-glasses1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four metal square">
+          <div class="element-image">
+            <img ng-src="../assets/images/square-metallic-glasses2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="element-item one-four plastic round">
+          <div class="element-image">
+            <img ng-src="../assets/images/rounded-plastic-glasses1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four plastic round">
+          <div class="element-image">
+            <img ng-src="../assets/images/rounded-plastic-glasses2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four metal round">
+          <div class="element-image">
+            <img ng-src="../assets/images/rounded-metallic-glasses1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four metal round">
+          <div class="element-image">
+            <img ng-src="../assets/images/rounded-metallic-glasses2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="element-item one-four plastic rectangled">
+          <div class="element-image">
+            <img ng-src="../assets/images/rectangle-plastic-glasses1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four plastic rectangled">
+          <div class="element-image">
+            <img ng-src="../assets/images/rectangle-plastic-glasses2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four metal rectangled">
+          <div class="element-image">
+            <img ng-src="../assets/images/rectangle-metallic-glasses1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four metal rectangled">
+          <div class="element-image">
+            <img ng-src="../assets/images/rectangle-metallic-glasses2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="element-item one-four plastic oval">
+          <div class="element-image">
+            <img ng-src="../assets/images/oval-plastic-glasses1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four plastic oval">
+          <div class="element-image">
+            <img ng-src="../assets/images/oval-plastic-glasses2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four metal oval">
+          <div class="element-image">
+            <img ng-src="../assets/images/oval-metallic-glasses1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="element-item one-four metal oval">
+          <div class="element-image">
+            <img ng-src="../assets/images/oval-metallic-glasses2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!--/Portfolio Plus Filters -->
+
+  <div class="portfolio-bottom"></div>
+
+  <!-- Project Page Holder-->
+  <div id="project-page-holder">
+    <div class="clear"></div>
+    <div id="project-page-data"></div>
+  </div>
+  <!--/Project Page Holder-->
+
+
+</section>
+
+

@@ -1,0 +1,125 @@
+
+
+/* ===========================
+--- Brands
+============================ */
+
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.isotope {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.isotope .one-four {
+  margin: 0!important;
+  line-height:0;
+  width: 50%;
+  padding: 0;
+  position:relative;
+}
+
+.element-item {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.element-item .element-image {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.element-item .element-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 960px) {
+  .isotope .one-four {
+    width: 25%;
+  }
+}
+
+/* Portfolio */
+
+#portfolio {
+  background-color:#FFF;
+}
+
+.container.portfolio-title {
+  padding-bottom:0px;
+}
+
+
+#filters {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  display: block;
+  float: none;
+  z-index: 2;
+  position: relative;
+}
+
+#filters ul li {
+  display: inline-block;
+}
+
+#filters ul li a {
+  display: block;
+}
+
+#filters h5 {
+  text-transform:uppercase;
+  font-size:0.8rem;
+}
+
+#filters li{
+  padding: 4px 15px;
+  background-color:#ccc;
+  border-radius:3px;
+  transition:all 0.3s ease 0s;
+  -moz-transition:all 0.3s ease 0s;
+  -webkit-transition:all 0.3s ease 0s;
+  -o-transition:all 0.3s ease 0s;
+  color: #333;
+}
+
+#filters ul li a:hover h5, #filters ul li a.active li {
+  color: #ddd;
+ }
+
+#filters li:hover{
+  color: #fff;
+  background-color:#555;
+}
+
+.shapeselected {
+  color: #000;
+}
+
+@media only screen and (max-width: 767px) {
+  #filters ul li {
+    display: block;
+    margin: 5px 60px;
+  }
+}
+
+#project-page-data {
+  margin-bottom: 0px;
+}
+
+#project-page-holder {
+  display: none;
+  background-color:#FFF;
+}

@@ -1,0 +1,34 @@
+
+
+
+.boxcard{
+  background-color: #fff;
+  margin: 5px;
+  margin-bottom: 5%;
+  padding:0px;
+  box-shadow: 1px 1px #ccc;
+}
+@media screen and (min-width:767px) {
+  .boxcard {
+    height: 600px;
+  }
+}
+@media screen and (max-width:766px) {
+  .boxcard {
+    height: 580px;
+  }
+}
+@media screen and (max-width:500px) {
+  .boxcard {
+    height: 450px;
+  }
+}
+.boxcard p{
+  margin: 25px;
+  text-align: center;
+}
+.boxcard h2{
+  margin-top: 20px;
+  text-align: center;
+  color: #BB6688;
+}

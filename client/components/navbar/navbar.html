@@ -1,0 +1,23 @@
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" ng-controller="NavbarCtrl">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand"><h1>goOptika</h1></a>
+      <button type="button" class="navbar-toggle"  ng-click="isCollapsed = !isCollapsed">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+    <div collapse="isCollapsed" class="collapse navbar-collapse navbar-right" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+          <a href="" ng-click="setRoute(item.link)">{{item.title}}</a>
+        </li>
+        <li ng-show="isAdmin()" ng-class="{active: isActive('/admin')}"><a href="/admin">Admin</a></li>
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a href="" ng-click="setRoute('/login')">Login</a></li>
+        <li ng-show="isLoggedIn()"><p class="navbar-text">Hello {{ getCurrentUser().name }}</p> </li>
+        <li ng-show="isLoggedIn()" ng-class="{active: isActive('/settings')}"><a href="/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+        <li ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

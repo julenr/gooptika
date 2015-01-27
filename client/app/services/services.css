@@ -1,0 +1,17 @@
+
+/* ===========================
+--- Services
+============================ */
+
+
+.srv-item {
+  padding-bottom: 10%;
+}
+
+.srv-item .left{
+  text-align: left;
+}
+
+.srv-item .right{
+  text-align: right;
+}

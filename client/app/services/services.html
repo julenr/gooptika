@@ -1,0 +1,84 @@
+<!-- Section: intro -->
+<section id="intro" class="intro">
+  <div class="adaptive-img-box ratio-16-9">
+    <img src="../assets/images/servicesbkg.jpg" alt="" />
+    <div class="slogan">
+      <h2>We work for your health</h2>
+    </div>
+  </div>
+</section>
+<!-- /Section: intro -->
+
+<!-- Section: about -->
+<section id="about" class="home-section text-center">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <div class="section-heading">
+            <h2>Our Core Services</h2>
+            <i class="fa fa-2x fa-angle-down"></i>
+            <p>
+              <b>Eye Tests</b><br>
+              We have the best technology and years of experience to help find any issues with your eye health.
+            </p>
+            <p>
+              <b>Expert Assistance</b><br>
+              We can help in all areas of eye care including low vision, infant care and eye diseases.
+            </p>
+            <p>
+              <b>Fitting Frames For You</b><br>
+              We will custom fit your frames so they are always comfortable and you can select your frames from the best brands.
+            </p>
+          </div>
+          <div class="section-heading">
+            <h2>Our Expertise</h2>
+            <i class="fa fa-2x fa-angle-down"></i>
+            <p>We encourage our customers to take an eye test at least every two years, or more frequently if recommended.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Section: about -->
+
+
+<section id="expertise">
+  <div class="container-fluid">
+    <div class="row" ng-repeat="expertise in SrvsCtrl.expertises">
+      <div class="col-md-6">
+        <div class="container-fluid">
+          <div class="row srv-item">
+            <div class="col-xs-9">
+              <h5 class="right">{{expertise.titleLeft}}</h5>
+              <p class="right">{{expertise.descriptionLeft}}</p>
+            </div>
+            <div class="col-xs-3 wow bounceIn">
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-2x fa-stack-2x"></i>
+                <i class="fa {{expertise.iconLeft}} fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="container-fluid">
+          <div class="row srv-item">
+            <div class="col-xs-3 wow bounceIn">
+              <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-2x fa-stack-2x"></i>
+                <i class="fa {{expertise.iconRight}} fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div class="col-xs-9">
+              <h5>{{expertise.titleRight}}</h5>
+              <p class="left">{{expertise.descriptionRight}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

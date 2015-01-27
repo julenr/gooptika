@@ -1,0 +1,41 @@
+
+
+/* ===========================
+--- Eyehealth
+============================ */
+
+.eyehealth-bg-color1 {
+  background: #F2EFE4;
+  color: #4C3327;
+}
+.eyehealth-bg-color2 {
+  background: #CB8C1D;
+  color: #FFFFFF;
+}
+.eyehealth-bg-color3 {
+  background: #4C3327;
+  color: #BD3632;
+}
+.eyehealth-bg-color4 {
+  background: #BD3632;
+  color: #F2EFE4;
+}
+
+.eye-health-section {
+  padding: 5%;
+  display:block;
+  position:relative;
+  z-index:120;
+  font-family: 'Merriweather',sans-serif;
+}
+
+.eye-health-section p {
+  text-align: left;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.eye-health-section h4 {
+  text-align: right;
+  font-size: 3.8rem;
+}
